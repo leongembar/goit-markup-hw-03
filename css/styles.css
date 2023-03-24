@@ -25,7 +25,7 @@ width: 1158px;
 padding-left: 15px;
 padding-right: 15px;
 margin: 0 auto;
-/* border: 1px solid red; */
+border: 1px solid red;
 }
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -35,6 +35,10 @@ p, h1, h2, h3, h4, h5, h6 {
 ul {
     margin:0;
     padding-left: 0;
+}
+
+.img{
+    display: block;
 }
 
 body {
@@ -110,7 +114,7 @@ body {
     justify-content: start;
 }
 .header{
-    padding-top: 15px;
+    border-bottom: 1px solid #E7E9FC;
 }
 .main-nav .logo{
     margin-right: 76px;
@@ -192,6 +196,12 @@ body {
     background-color: #2E2F42;
     text-align: center;
 }
+
+.hero .conteiner{
+    padding-top: 188px;
+    padding-bottom: 188px;
+}
+
 .hero-title{
     margin-bottom: 40px;
 
@@ -300,7 +310,7 @@ body {
     background-color:#F4F4FD;
 }
 
-.card{
+.team .card{
     padding: 32px 16px;
     text-align: center;
 }
@@ -321,12 +331,54 @@ body {
 
 /* Button portfolio */
 
+.conteiner.projects{
+    padding-top: 96px;
+    padding-bottom: 120px;
+
+}
+.projects .list-button,
+.projects .list-card{
+    display: flex;
+    justify-content: center;
+    }
+
+.list-button{
+    margin-bottom: 72px;
+}
+
 .button.portfolio {
+    padding: 12px 24px;
+    border: 1px solid #E7E9FC;
+    border-radius: 4px;
+
     color: #4D5AE5;
     background-color: #F4F4FD;
     
 }
 
+.list-button .item:not(:last-child){
+    margin-right: 24px;
+}
+
+.list-card{
+    flex-wrap: wrap;
+}
+
+.list-card .item{
+    margin-right: 24px;
+}
+.list-card .item:nth-child(3n){
+    margin-right: 0px;
+}
+
+
+.list-card .card {
+    border-left: 1px solid #E7E9FC;
+    border-bottom: 1px solid #E7E9FC;
+    border-right: 1px solid #E7E9FC;
+    padding-top:32px;
+    padding-bottom: 32px;
+}
 .button.portfolio:hover,
 .button.portfolio:focus {
     color: #fff;
