@@ -72,6 +72,20 @@ body {
     list-style: none;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 
 /* title */
 
@@ -112,7 +126,6 @@ body {
 .main-nav{
     display:flex;
     align-items:center;
-    justify-content: start;
 }
 .header{
     border-bottom: 1px solid #E7E9FC;
@@ -194,17 +207,17 @@ body {
 /* Hero */
 
 .hero{
+    padding: 188px 0;
     background-color: #2E2F42;
     text-align: center;
 }
 
-.hero .conteiner{
-    padding-top: 188px;
-    padding-bottom: 188px;
-}
+
 
 .hero-title{
-    margin-bottom: 40px;
+    max-width: 496px;
+    margin: 0 auto;
+    margin-bottom: 48px;
 
     color: #FFFFFF;
 
@@ -216,10 +229,11 @@ body {
     }
 
 
-
-/* hero */
-
 .hero.button{
+    padding: 16px 32px;
+    border: 0;
+    border-radius: 4px;
+
     background-color:#4D5AE5 ;
     color:#FFFFFF ;
 }
@@ -227,6 +241,8 @@ body {
 .hero.button:focus{
     background-color: #404BBF;
 }
+
+/* hero */
 
 /* advantages */
 
@@ -300,6 +316,8 @@ body {
 .person{
     width: 264px;
     background-color: #FFFFFF;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border-radius: 0px 0px 4px 4px;
 }
 .person:not(:last-child){
     margin-right: 24px;
