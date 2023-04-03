@@ -19,9 +19,14 @@
     --primary-bcg-color:#FFFFFF;
     --footer-bcg-color:#2E2F42;
 }
+.section{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 
 .conteiner {
 width: 1158px;
+
 padding-left: 15px;
 padding-right: 15px;
 margin-left: auto;
@@ -162,6 +167,8 @@ body {
 
 .address .link {
     color: #434455;
+    padding-top: 24px;
+    padding-bottom: 24px;
 
     font-weight: 400;
     font-size: 16px;
@@ -182,6 +189,8 @@ body {
 /* footer */
 
 .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
     background-color: var(--footer-bcg-color);
 }
 
@@ -190,10 +199,7 @@ body {
     color: #F4F4FD;
 }
 
-.footer .conteiner{
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
+
 
 .footer .logo{
     display: inline-block;
@@ -229,9 +235,9 @@ body {
     }
 
 
-.hero.button{
+.hero-btn{
     padding: 16px 32px;
-    border: 0;
+    border: none;
     border-radius: 4px;
 
     background-color:#4D5AE5 ;
@@ -246,10 +252,8 @@ body {
 
 /* advantages */
 
-
 .advantages{
-    padding-top: 120px ;
-    padding-bottom: 120px;
+    padding-bottom: 0;
 }
 
 .advantages .list {
@@ -279,9 +283,7 @@ body {
 
 /* work */
 
-.work{
-    padding-bottom: 120px;;
-}
+
 
 .work .list{
     display: flex;
@@ -300,10 +302,6 @@ body {
 
 /* team */
 
-.team{
-    padding-top: 120px;
-    padding-bottom: 120px;
-}
 
 .team .list{
     display: flex;
@@ -325,7 +323,7 @@ body {
 
 
 
-.section-team{
+.team{
     background-color:#F4F4FD;
 }
 
@@ -350,9 +348,8 @@ body {
 
 /* Button portfolio */
 
-.conteiner.projects{
+.projects{
     padding-top: 96px;
-    padding-bottom: 120px;
 
 }
 .projects .list-button,
